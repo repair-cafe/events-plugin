@@ -1,0 +1,17 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table liip_events_events'
+    - builder_table_create_liip_events_events.php
+1.0.3:
+    - 'Created table liip_events_tags'
+    - builder_table_create_liip_events_tags.php
+1.0.4:
+    - 'Created table liip_events_event_tag'
+    - builder_table_create_liip_events_event_tag.php
+1.0.5:
+    - 'Updated table liip_events_events'
+    - builder_table_update_liip_events_events.php
+1.0.6:
+    - 'Updated table liip_events_events'
+    - builder_table_update_liip_events_events_2.php

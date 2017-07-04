@@ -1,0 +1,33 @@
+plugin:
+    name: 'liip.events::lang.plugin.name'
+    description: 'liip.events::lang.plugin.description'
+    author: Liip
+    icon: oc-icon-calendar
+    homepage: ''
+permissions:
+    events.events:
+        tab: Events
+        label: Events
+    events.tags:
+        tab: Events
+        label: Tags
+navigation:
+    main-menu-item:
+        label: Events
+        url: liip/events/events
+        icon: icon-calendar
+        permissions:
+            - 'events.*'
+        sideMenu:
+            side-menu-events:
+                label: Events
+                url: liip/events/events
+                icon: icon-calendar
+                permissions:
+                    - events.events
+            side-menu-tags:
+                label: Tags
+                url: liip/events/tags
+                icon: icon-tags
+                permissions:
+                    - events.tags

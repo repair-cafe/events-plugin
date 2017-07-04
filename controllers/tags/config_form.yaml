@@ -1,0 +1,10 @@
+name: Tags
+form: $/liip/events/models/tag/fields.yaml
+modelClass: Liip\Events\Models\Tag
+defaultRedirect: liip/events/tags
+create:
+    redirect: 'liip/events/tags/update/:id'
+    redirectClose: liip/events/tags
+update:
+    redirect: liip/events/tags
+    redirectClose: liip/events/tags

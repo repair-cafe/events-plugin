@@ -1,0 +1,10 @@
+name: Events
+form: $/liip/events/models/event/fields.yaml
+modelClass: Liip\Events\Models\Event
+defaultRedirect: liip/events/events
+create:
+    redirect: 'liip/events/events/update/:id'
+    redirectClose: liip/events/events
+update:
+    redirect: liip/events/events
+    redirectClose: liip/events/events
