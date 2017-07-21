@@ -4,7 +4,6 @@ use Backend\Facades\BackendAuth;
 use Backend\Models\User;
 use October\Rain\Database\Model;
 
-
 /**
  * Model
  */
@@ -42,7 +41,7 @@ class Event extends Model
     public function scopeByUser($query)
     {
         $user = BackendAuth::getUser();
-        if(!$user->is_superuser) {
+        if (!$user->is_superuser) {
             $query->where('user_id', $user->id);
         }
     }

@@ -7,8 +7,7 @@ class BuilderTableUpdateLiipEventsEvents extends Migration
 {
     public function up()
     {
-        Schema::table('liip_events_events', function($table)
-        {
+        Schema::table('liip_events_events', function ($table) {
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });
@@ -16,8 +15,7 @@ class BuilderTableUpdateLiipEventsEvents extends Migration
     
     public function down()
     {
-        Schema::table('liip_events_events', function($table)
-        {
+        Schema::table('liip_events_events', function ($table) {
             $table->dropColumn('created_at');
             $table->dropColumn('updated_at');
         });

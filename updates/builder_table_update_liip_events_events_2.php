@@ -7,16 +7,14 @@ class BuilderTableUpdateLiipEventsEvents2 extends Migration
 {
     public function up()
     {
-        Schema::table('liip_events_events', function($table)
-        {
+        Schema::table('liip_events_events', function ($table) {
             $table->integer('user_id')->nullable();
         });
     }
     
     public function down()
     {
-        Schema::table('liip_events_events', function($table)
-        {
+        Schema::table('liip_events_events', function ($table) {
             $table->dropColumn('user_id');
         });
     }
