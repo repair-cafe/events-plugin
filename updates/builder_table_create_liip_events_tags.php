@@ -7,8 +7,7 @@ class BuilderTableCreateLiipEventsTags extends Migration
 {
     public function up()
     {
-        Schema::create('liip_events_tags', function($table)
-        {
+        Schema::create('liip_events_tags', function ($table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name');

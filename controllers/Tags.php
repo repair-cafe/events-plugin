@@ -11,7 +11,7 @@ class Tags extends Controller
     public $formConfig = 'config_form.yaml';
 
     public $requiredPermissions = [
-        'events.tags' 
+        'events.tags'
     ];
 
     public function __construct()

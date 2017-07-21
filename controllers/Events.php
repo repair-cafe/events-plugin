@@ -11,7 +11,7 @@ class Events extends Controller
     public $formConfig = 'config_form.yaml';
 
     public $requiredPermissions = [
-        'events.events' 
+        'events.events'
     ];
 
     public function __construct()
